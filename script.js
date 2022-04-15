@@ -30,3 +30,17 @@ function isNumeric(value) {
     // standard JavaScript function to determine whether a string is an illegal number (Not-a-Number)
     return !isNaN(value);
 }
+
+function startPaint() {
+    isPainting = true;
+}
+
+function endPaint() {
+    isPainting = false;
+}
+
+function doPaint(x, y) {
+    if (isPainting) {
+        paintCircle(x, y);
+    }
+}
