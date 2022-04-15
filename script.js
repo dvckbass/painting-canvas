@@ -9,6 +9,10 @@ function setWidth(value) {
     isNumeric(value) ? (paintcanvas.width = value) : null;
 }
 
+function setHeight(value) {
+    isNumeric(value) ? (paintcanvas.height = value) : null;
+}
+
 function clearCanvas() {
     context.clearRect(0, 0, paintcanvas.width, paintcanvas.height);
 }
