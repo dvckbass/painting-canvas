@@ -5,7 +5,9 @@ var radius = 50;
 // only paint if mouse is  being dragged (moved while the button is pressed)
 var isPainting = false;
 
-function setWidth(value) {}
+function setWidth(value) {
+    isNumeric(value) ? (paintcanvas.width = value) : null;
+}
 
 function clearCanvas() {
     context.clearRect(0, 0, paintcanvas.width, paintcanvas.height);
